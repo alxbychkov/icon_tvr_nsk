@@ -1,0 +1,247 @@
+.articles-section {}
+
+.article-item {
+    font-style: normal;
+    margin-bottom: 35px;
+}
+
+.article__more {
+    display: inline-block;
+    width: 100%;
+    text-align: end;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.034em;
+    color: #55686E;
+    transition: .3s;
+}
+
+.article__back__link,
+.articles__header__link:hover,
+.article__more:hover,
+.article-item__link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.article__background {
+    width: 100%;
+    display: table;
+    overflow: hidden;
+}
+
+.article__image,
+.article__img {
+    background-color: #d0e0e3;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease 0s;
+}
+
+.article__img {
+    height: 207px;
+}
+
+@media screen and (min-width: 768px) {
+    .article__right .article__img {
+        height: 153px;
+    }    
+}
+
+.article-item__link:hover .article__img {
+    transform: scale(1.25);
+}
+
+.article__title {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.043em;
+    color: #000000;
+    margin-top: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.article-item__link:hover .article__title {
+    color: #3847a2;
+}
+
+.article__description {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.034em;
+    color: #55686E;
+    text-align: justify;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+
+.articles__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.articles__h2,
+.article__h1 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: -0.043em;
+    color: #000000;
+}
+
+.article__h1 {
+    margin-bottom: 35px;
+}
+
+.articles__header__link {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.034em;
+    text-decoration-line: underline;
+    color: #55686E;
+    align-self: flex-end;
+    transition: .3s;
+}
+
+.article__image {
+    height: 430px;
+}
+
+@media screen and (max-width: 991px) {
+    .article__image {
+        height: 296px;
+    }   
+}
+
+@media screen and (max-width: 561px) {
+    .article__image {
+        height: 261px;
+    }   
+}
+
+.article__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.034em;
+    color: #55686E;
+    margin-top: 25px;
+}
+
+.article__text p {
+    margin-top: 25px;
+    margin-bottom: 14px;
+}
+
+.article__text h1,
+.article__text h2,
+.article__text h3,
+.article__text h4,
+.article__text h5 {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.043em;
+    color: #000000;
+    margin-bottom: 14px;
+}
+
+.article__back__link {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.034em;
+    color: #55686E;
+    margin-top: 30px;
+    transition: .3s;
+}
+
+.article__subtitle {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.043em;
+    color: #000000;
+    margin-bottom: 14px;
+}
+
+.article-social {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__item {
+    padding: 7px 15px;
+    height: 30px;
+    border-radius: 3px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.034em;
+    color: #FFFFFF !important;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.social__item .social__item__share {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .article-social {
+        justify-content: center;
+    }
+    .social__item:not(:last-of-type) {
+        margin-right: 17px;
+    }
+    .social__item:not(.__vk) .social__item__share {
+        display: none;
+    }   
+}
+
+@media screen and (max-width: 561px) {
+    .social__item.__vk .social__item__share {
+        display: none;
+    }   
+}
+
+.social__item.__vk {
+    background: #4C6C91;
+}
+
+.social__item.__fb {
+    background: #4267B2;
+}
+
+.social__item.__ok {
+    background: #D7772D;
+}
+
+.social__item.__tw {
+    background: #55ACEE;
+}
+
+.social__item.__wa {
+    background: #25D366;
+}
+
+.article__left,
+.article__right {
+    margin-bottom: 22px;
+}
